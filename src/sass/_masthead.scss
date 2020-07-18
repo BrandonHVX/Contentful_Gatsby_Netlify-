@@ -1,0 +1,61 @@
+// Styling for the masthead
+header.masthead {
+  position: relative;
+      height: 80vh;
+      z-index: 0;
+background-color: red;
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  background: url('../images/bg-pattern.png'), $theme-secondary;
+  background: url('../images/bg-pattern.png'),
+    -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
+  background: url('../images/bg-pattern.png'),
+    linear-gradient(to left, $theme-secondary, $theme-tertiary);
+  color: white;
+
+  .header-content {
+    max-width: 500px;
+    margin-bottom: 100px;
+
+    text-align: center;
+    h1 {
+      font-size: 40px;
+    }
+  }
+  .device-container {
+  width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    .screen img {
+      border-radius: 3px;
+    }
+  }
+  @media (min-width: 992px) {
+    height: 60vh;
+    min-height: 875px;
+ padding-top: 130px;
+    padding-bottom: 0;
+    .header-content {
+      margin-bottom: 0;
+
+      text-align: left;
+      h1 {
+        font-size: 40px;
+      }
+    }
+    .device-container {
+      width: 100%;
+    }
+  }
+}
+
+.wave-right{
+  position: absolute;
+
+  bottom:0;
+}
+
+.hero-image {
+  z-index: 100;
+}
