@@ -31,7 +31,22 @@ class RootIndex extends React.Component {
          <Gallery />
          
 
-
+   <div style={{ background: '#fff' }}>
+         
+     
+           <div className="wrapper">
+             <h2 className="section-headline">Recent articles</h2>
+             <ul className="article-list">
+               {posts.map(({ node }) => {
+                 return (
+                   <li key={node.slug}>
+                     <ArticlePreview article={node} />
+                   </li>
+                 )
+               })}
+             </ul>
+           </div>
+         </div>
 
         </div>
       </Layout>
