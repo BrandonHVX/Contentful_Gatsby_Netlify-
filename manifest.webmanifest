@@ -27,7 +27,7 @@
         "short_name": "Today",
         "description": "View weather information for today",
         "url": "/today?source=pwa",
-        "icons": [{ "src": "/images/first-take-logo-black.png", "sizes": "192x192","purpose": "maskable" }]
+        "icons": [{ "src": "/src/images/first-take-logo-black.png", "sizes": "192x192","purpose": "maskable" }]
       },
       {
         "name": "How's weather tomorrow?",
