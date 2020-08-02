@@ -26,7 +26,7 @@ export default () => (
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
             <h3>The 1st Take will serve as an interactive central
-connection</h3>
+connection.</h3>
             <p class="font-italic">
             The 1st Take Youth Film Program will serve as an interactive central
 connection between arts, business, media, and entertainment. Students
