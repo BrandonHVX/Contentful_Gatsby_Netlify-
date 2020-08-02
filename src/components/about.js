@@ -2,7 +2,7 @@ import React from 'react'
 import Img from 'gatsby-image'
 import Scroller from './scroller'
 import { Row, Col } from "react-bootstrap"
-import Students from '../images/Students.jpg'
+import Students from '../images/students.jpg'
 import Training from '../images/training.jpg'
 import Overtown from '../images/overtown.jpg'
 import Entrepreneurship from '../images/minority.jpg'
