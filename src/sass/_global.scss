@@ -1,52 +1,84 @@
 // Global styling for this template
-html,
-body {
-    width: 100%;
-    height: 100%;
+body,
+html {
+
 }
 
-body {
-    @include body-font;
+// Typography
+.text-white-75 {
+	color: fade-out($white, .25);
 }
 
-a {
-    color: $theme-primary;
-    @include transition-all;
-    &:hover,
-    &:focus {
-        color: darken($theme-primary, 10%);
-    }
-}
-
-hr {
-    max-width: 100px;
-    margin: 25px auto 0;
-    border-width: 1px;
-    border-color: fade-out($gray-darker, .9);
+// Custom horizontal rules
+hr.divider {
+	max-width: 3.25rem;
+	border-width: 0.2rem;
+	border-color: $primary;
 }
 
 hr.light {
-    border-color: white;
+	border-color: $white;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    @include heading-font;
+// Button restyling
+.btn {
+	font-family: $font-family-sans-serif;
 }
 
-p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 20px;
+.btn-xl {
+	padding: 1.25rem 2.25rem;
+	font-size: 0.85rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 10rem;
 }
 
-section {
-    padding: 100px 0;
-    h2 {
-        font-size: 50px;
-    }
+.section-bg {
+	background-color: rgba(245, 242, 242, 0.824);
 }
+
+.btn-outline {
+	padding: 1.25rem 2.25rem;
+	font-size: 0.85rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	border: 2px solid white;
+	border-radius: 10rem;
+	color: white;
+	&:hover {
+		background-color: white;
+	}
+
+}
+
+// Page section padding
+.page-section {
+	padding: 8rem 0;
+}
+
+.section-heading{
+text-align: center;
+margin-bottom: 40px;
+
+h1{
+	font-weight: 800;
+}
+
+
+h5{
+	font-weight: 100;
+}
+
+}
+
+// Modal
+.modal-backdrop {
+	background-color: #0b0b0b;
+}
+
+.modal-backdrop.show {
+	opacity: 0.8;
+}
+
+

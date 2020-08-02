@@ -1,0 +1,67 @@
+// Styling for the masthead
+section.films {
+    padding-top: 5rem;
+    padding-bottom:  5rem;
+	position: relative;
+
+	width: 100%;
+
+	// replace the masthead.jpg image in the /img directory to change the image
+	// if the image name change, make sure to update the url path below!
+	background: linear-gradient(to bottom, #{fade-out( rgb(255, 0, 0), .1)} 
+	0%,#{fade-out(rgba(214, 15, 15, 0.9), .2)} 100%), url('../images/hero-bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: cover;
+	img{
+		width: 100%;
+		position: relative;
+		bottom: 0;
+	}
+
+	h1 {
+		margin: 0;
+		font-size: 52px;
+		font-weight: 700;
+		line-height: 54px;
+		color: #fff;
+
+	}
+	h2 {
+		margin: 0;
+		font-weight: 100;
+		color: rgba(255, 255, 255, 0.851);
+
+	}
+	@include media-breakpoint-up(lg) {
+
+
+		padding-top: 10rem;
+		padding-bottom: 10rem;
+		p {
+			font-size: 1.15rem;
+		}
+		h1 {
+			font-size: 3rem;
+		}
+		img{
+			width: 100%;
+			position: relative;
+			bottom: 0;
+		}
+	
+	}
+	@include media-breakpoint-up(xl) {
+		
+		h1 {
+			font-size: 3.5rem;
+		}
+		img{
+			width: 100%;
+			position: relative;
+			bottom: 0;
+		}
+	
+	}
+}

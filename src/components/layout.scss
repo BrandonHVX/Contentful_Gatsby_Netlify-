@@ -1,0 +1,20 @@
+@import "../sass/variables.scss";
+
+// Import font awesome
+@import "~@fortawesome/fontawesome-free/css/all.css";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import '../sass/fontawesome/css/all.min.css';
+
+
+// Import Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Import custom styles
+@import "../sass/global.scss";
+@import "../sass/about.scss";
+@import "../sass/navbar.scss";
+@import "../sass/curric.scss";
+@import "../sass/gallery.scss";
+@import "../sass/films.scss";
+@import "../sass/masthead.scss";
+@import "../sass/portfolio.scss";

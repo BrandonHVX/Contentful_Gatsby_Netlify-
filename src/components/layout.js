@@ -1,27 +1,76 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import base from './base.css'
-import Container from './container'
-import Navigation from './navigation'
-import '../sass/new-age.scss';
+/**
+ * Layout component that queries for data
+ * with Gatsby's useStaticQuery component
+ *
+ * See: https://www.gatsbyjs.org/docs/use-static-query/
+ */
 
-class Template extends React.Component {
-  render() {
-    const { location, children } = this.props
-    let header
+import React from "react"
+import PropTypes from "prop-types"
+import NavBar from "./Navbar"
+import "./layout.scss"
 
-    let rootPath = `/`
-    if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {
-      rootPath = __PATH_PREFIX__ + `/`
+const getScrollNode = (element) => {
+  return element.ownerDocument.scrollingElement || element.ownerDocument.documentElement
+}
+
+const isScrolled = (element) => {
+  const scrollNode = getScrollNode(element)
+  return scrollNode.scrollTop > 0
+}
+
+export default class Layout extends React.Component {
+  constructor(props) {
+    super(props)
+    this.siteContainer = React.createRef()
+    this.state = {
+      scrolled: false,
     }
+    this.handleScroll = this.handleScroll.bind(this)
+  }
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll)
+    const element = this.siteContainer.current
+    this.setState({
+      scrolled: isScrolled(element),
+    })
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll)
+  }
+
+  handleScroll() {
+    const element = this.siteContainer.current
+    this.setState({
+      scrolled: isScrolled(element),
+    })
+  }
+
+  render() {
+    let className = "site-container"
+    if (this.props.className) className += ` ${this.props.className}`
+    if (this.state.scrolled) className += " navbar-scrolled"
 
     return (
-      <div>
-        <Navigation />
-        {children}
+      <div
+        className={className}
+        ref={this.siteContainer}
+        >
+   <NavBar />
+        <main>{this.props.children}</main>
+        <footer className="bg-light py-5">
+          <div className="container">
+            <div className="small text-center text-muted">Copyright &copy; 2020 - 1st Take Youth Film Program</div>
+          </div>
+        </footer>
       </div>
     )
   }
 }
 
-export default Template
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string,
+}

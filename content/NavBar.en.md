@@ -1,0 +1,4 @@
+---
+brand: "TYCOON"
+menuText: "Menu "
+---

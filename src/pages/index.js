@@ -2,13 +2,19 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import get from 'lodash/get'
 import { Helmet } from 'react-helmet'
+import Img from 'gatsby-image'
 import Hero from '../components/hero'
-import Welcome from '../components/welcome'
+import Curric from '../components/curric'
+import Gallery from '../components/gallery'
+import Films from '../components/films'
+import About from '../components/about'
 import Layout from '../components/layout'
-
+import WaveRight from '../images/wave_right.png'
 import ArticlePreview from '../components/article-preview'
 
 class RootIndex extends React.Component {
+ 
+
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allContentfulBlogPost.edges')
@@ -16,22 +22,17 @@ class RootIndex extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <div style={{ background: '#fff' }}>
+        <div >
           <Helmet title={siteTitle} />
-          <Hero />
-          <Welcome />
-          <div className="wrapper">
-            <h2 className="section-headline">Recent articles</h2>
-            <ul className="article-list">
-              {posts.map(({ node }) => {
-                return (
-                  <li key={node.slug}>
-                    <ArticlePreview article={node} />
-                  </li>
-                )
-              })}
-            </ul>
-          </div>
+        <Hero/>
+        <About />
+        <Curric />
+        <Films />
+         <Gallery />
+         
+
+
+
         </div>
       </Layout>
     )
