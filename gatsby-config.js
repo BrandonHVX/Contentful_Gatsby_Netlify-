@@ -29,14 +29,29 @@ module.exports = {
   },
   pathPrefix: '/gatsby-contentful-starter',
   plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `GatsbyJS`,
+        short_name: `GatsbyJS`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+    },
+  },
+  {
+    resolve: 'gatsby-source-contentful',
+    options: contentfulConfig,
+  },
     'gatsby-transformer-remark',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
-    {
-      resolve: 'gatsby-source-contentful',
-      options: contentfulConfig,
-    },
+    `gatsby-plugin-offline`,
+   
+
+    
   ],
 }
