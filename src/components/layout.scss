@@ -4,7 +4,8 @@
 @import "~@fortawesome/fontawesome-free/css/all.css";
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";
 @import '../sass/fontawesome/css/all.min.css';
-
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
 
 // Import Bootstrap
 @import "~bootstrap/scss/bootstrap";
@@ -13,7 +14,7 @@
 @import "../sass/global.scss";
 @import "../sass/about.scss";
 @import "../sass/navbar.scss";
-@import "../sass/curric.scss";
+@import "../sass/education.scss";
 @import "../sass/gallery.scss";
 @import "../sass/films.scss";
 @import "../sass/masthead.scss";

@@ -4,7 +4,7 @@ import get from 'lodash/get'
 import { Helmet } from 'react-helmet'
 import Img from 'gatsby-image'
 import Hero from '../components/hero'
-import Curric from '../components/curric'
+import Education from '../components/education'
 import Gallery from '../components/gallery'
 import Films from '../components/films'
 import About from '../components/about'
@@ -26,8 +26,8 @@ class RootIndex extends React.Component {
           <Helmet title={siteTitle} />
         <Hero/>
         <About />
-        <Curric />
-        <Films />
+ <Education />
+ <Films />
          <Gallery />
          
 

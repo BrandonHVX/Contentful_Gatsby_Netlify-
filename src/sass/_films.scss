@@ -1,7 +1,6 @@
-// Styling for the masthead
-section.films {
-    padding-top: 5rem;
-    padding-bottom:  5rem;
+// Styling for the About
+.films {
+
 	position: relative;
 
 	width: 100%;
@@ -14,54 +13,4 @@ section.films {
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-size: cover;
-	img{
-		width: 100%;
-		position: relative;
-		bottom: 0;
-	}
-
-	h1 {
-		margin: 0;
-		font-size: 52px;
-		font-weight: 700;
-		line-height: 54px;
-		color: #fff;
-
-	}
-	h2 {
-		margin: 0;
-		font-weight: 100;
-		color: rgba(255, 255, 255, 0.851);
-
-	}
-	@include media-breakpoint-up(lg) {
-
-
-		padding-top: 10rem;
-		padding-bottom: 10rem;
-		p {
-			font-size: 1.15rem;
-		}
-		h1 {
-			font-size: 3rem;
-		}
-		img{
-			width: 100%;
-			position: relative;
-			bottom: 0;
-		}
-	
-	}
-	@include media-breakpoint-up(xl) {
-		
-		h1 {
-			font-size: 3.5rem;
-		}
-		img{
-			width: 100%;
-			position: relative;
-			bottom: 0;
-		}
-	
-	}
 }

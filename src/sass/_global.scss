@@ -1,18 +1,11 @@
 // Global styling for this template
-body,
-html {
 
-}
-
-// Typography
-.text-white-75 {
-	color: fade-out($white, .25);
-}
 
 // Custom horizontal rules
 hr.divider {
-	max-width: 3.25rem;
-	border-width: 0.2rem;
+	width: 3.25rem;
+	border-width: 0.3rem;
+	border-radius: 40px;
 	border-color: $primary;
 }
 
@@ -31,11 +24,14 @@ hr.light {
 	font-weight: 700;
 	text-transform: uppercase;
 	border: none;
+	color: white;
 	border-radius: 10rem;
-}
-
-.section-bg {
-	background-color: rgba(245, 242, 242, 0.824);
+	background-color: $primary;
+	&:hover {
+		background-color: $secondary;
+	
+		color: white;
+	}
 }
 
 .btn-outline {
@@ -43,31 +39,44 @@ hr.light {
 	font-size: 0.85rem;
 	font-weight: 700;
 	text-transform: uppercase;
-	border: 2px solid white;
+	border: 2px solid $primary;
 	border-radius: 10rem;
-	color: white;
+	color: black;
+	transition: ease-in-out 0.3s;
+	background: transparent;
 	&:hover {
-		background-color: white;
+		background-color: $secondary;
+		border: 2px solid $secondary;
+		color: white;
+		transition: ease-in-out 0.3s;
 	}
 
 }
+
+
 
 // Page section padding
 .page-section {
 	padding: 8rem 0;
 }
+.section-bg {
+	background-color: rgba(245, 242, 242, 0.824);
+}
+
 
 .section-heading{
 text-align: center;
 margin-bottom: 40px;
 
-h1{
+ h4 {
 	font-weight: 800;
+	font-family: $font-family-base;
+	color: $gray-800;
 }
 
 
 h5{
-	font-weight: 100;
+	font-weight: 800;
 }
 
 }

@@ -2,24 +2,64 @@
 # Services
 --------------------------------------------------------------*/
 
-.services {
+ .education {
   padding-top: 100px;
 
-}
+  .display-font{
+    color: $primary;
+    font-weight: 100;
+    font-family: $headings-font-family;
+    font-style: italic;
+  }
 
 
-
-.services .icon-box {
+ .icon-box {
   text-align: center;
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
   background: #fff;
+ 
+  border-radius: 20px;
+ 
 }
 
-.services .icon-box .icon {
+.icon-box:hover {
+  border-color: #fff;
+  transition: all ease-in-out 0.3s;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+   .icon {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    background: $primary;
+    z-index: 0;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+    position: relative;
+  
+  }
+ 
+ .icon-image svg path {
+    transition: 0.5s;
+    fill: white;
+    z-index: 1;
+
+  }
+
+  
+
+}
+
+ .icon-box .icon {
   margin: 0 auto;
   width: 100px;
   height: 100px;
+  border: 1px solid red;
+  border-radius: 50px;  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,120 +67,55 @@
   position: relative;
 }
 
-.services .icon-box .icon i {
+ .icon-box .icon i {
   font-size: 36px;
   transition: 0.5s;
   position: relative;
 }
 
-.services .icon-box .icon svg {
+ .icon-box .icon svg {
   position: absolute;
-  top: 0;
+  padding: 10px;
+  top: 5px;
   left: 0;
 }
 
-.services .icon-box .icon svg path {
+
+
+.icon-box .icon-image svg path {
   transition: 0.5s;
-  fill: #f5f5f5;
+  fill: $primary;
+  z-index: 1;
+  
+
 }
 
-.services .icon-box h4 {
-  font-weight: 600;
+
+ .icon-box h4 {
+  font-weight: 800;
   margin: 10px 0 15px 0;
   font-size: 22px;
+  font-family: $font-family-base;
 }
 
-.services .icon-box h4 a {
-  color: #2c4964;
-  transition: ease-in-out 0.3s;
-}
 
-.services .icon-box p {
+
+ .icon-box p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.services .icon-box:hover {
-  border-color: #fff;
-  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
-}
-
-.services .iconbox-blue i {
-  color: #47aeff;
-}
-
-.services .iconbox-blue:hover .icon i {
-  color: #fff;
-}
-
-.services .iconbox-blue:hover .icon path {
-  fill: #47aeff;
-}
-
-.services .iconbox-orange i {
-  color: #ffa76e;
-}
-
-.services .iconbox-orange:hover .icon i {
-  color: #fff;
-}
-
-.services .iconbox-orange:hover .icon path {
-  fill: #ffa76e;
-}
-
-.services .iconbox-pink i {
-  color: #e80368;
-}
-
-.services .iconbox-pink:hover .icon i {
-  color: #fff;
-}
-
-.services .iconbox-pink:hover .icon path {
-  fill: #e80368;
-}
-
-.services .iconbox-yellow i {
-  color: #ffbb2c;
-}
-
-.services .iconbox-yellow:hover .icon i {
-  color: #fff;
-}
-
-.services .iconbox-yellow:hover .icon path {
-  fill: #ffbb2c;
-}
-
-.services .iconbox-red i {
-  color: #ff5828;
-}
-
-.services .iconbox-red:hover .icon i {
-  color: #fff;
-}
-
-.services .iconbox-red:hover .icon path {
-  fill: #ff5828;
-}
-
-.services .iconbox-teal i {
-  color: #11dbcf;
-}
-
-.services .iconbox-teal:hover .icon i {
-  color: #fff;
-}
-
-.services .iconbox-teal:hover .icon path {
-  fill: #11dbcf;
-}
 
 
 
 
+
+
+
+
+
+ }
 /*--------------------------------------------------
 ------ 8. SERVICES_BLOCK
 --------------------------------------------------*/
