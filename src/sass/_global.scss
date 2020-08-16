@@ -1,6 +1,8 @@
 // Global styling for this template
 
-
+a {
+	color: inherit;
+}
 // Custom horizontal rules
 hr.divider {
 	width: 3.25rem;
@@ -37,7 +39,7 @@ hr.light {
 .btn-outline {
 	padding: 1.25rem 2.25rem;
 	font-size: 0.85rem;
-	font-weight: 700;
+	
 	text-transform: uppercase;
 	border: 2px solid $primary;
 	border-radius: 10rem;
@@ -53,6 +55,24 @@ hr.light {
 
 }
 
+.btn-outline-white {
+	padding: 1.25rem 2.25rem;
+	font-size: 0.85rem;
+	
+	text-transform: uppercase;
+	border: 2px solid white;
+	border-radius: 10rem;
+	color: rgb(255, 255, 255);
+	transition: ease-in-out 0.3s;
+	background: transparent;
+	
+	&:hover {
+		background-color: rgba(255, 255, 255, 0.194);
+		border: 2px solid rgba(255, 255, 255, 0.194);
+		color: rgb(255, 255, 255);
+		transition: ease-in-out 0.3s;
+	}
+}
 
 
 // Page section padding

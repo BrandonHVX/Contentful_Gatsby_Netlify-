@@ -8,6 +8,7 @@ import Overtown from '../images/overtown.jpg'
 import Entrepreneurship from '../images/minority.jpg'
 import WaveRight from '../images/wave_right.png'
 import heroImg from '../images/1stTakeHero-v2.png'
+import ReactPlayer from 'react-player/youtube'
 
 import Dorsey from '../images/dorsey.jpg'
 import Image from './Img'
@@ -24,18 +25,9 @@ function MyVerticallyCenteredModal(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          Modal heading
-        </Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        <h4>Centered Modal</h4>
-        <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
-        </p>
+
+      <Modal.Body closeButton>
+      <ReactPlayer width='100%' url='https://www.youtube.com/watch?v=NHuVM9_imrE&t=18s' />
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>

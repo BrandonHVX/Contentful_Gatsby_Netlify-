@@ -28,27 +28,36 @@ class RootIndex extends React.Component {
         <About />
  <Education />
  <Films />
+ <section class="page-section section-bg blog" id="blog" >
+ <div className="container">
+      <div class=" section-heading mt-5 " data-wow-delay="0ms" data-wow-duration="1000ms" >
+					<h4 class="mrb-15 text-gray "> Recent News</h4>
+          <hr className="divider mb-4" />
+				
+
+					<p>Recent news on projects, special guests and upcoming events.</p>
+          </div>
+				</div>
+      <div className="container-cards">
+    
+    
+         {posts.map(({ node }) => {
+           return (
+             
+               <ArticlePreview article={node} />
+            
+           )
+         })}
+  
+</div>
+
+    </section>
          <Gallery />
          
 
-   <div style={{ background: '#fff' }}>
-         
-     
-           <div className="wrapper">
-             <h2 className="section-headline">Recent articles</h2>
-             <ul className="article-list">
-               {posts.map(({ node }) => {
-                 return (
-                   <li key={node.slug}>
-                     <ArticlePreview article={node} />
-                   </li>
-                 )
-               })}
-             </ul>
-           </div>
-         </div>
-
-        </div>
+  
+</div>
+        
       </Layout>
     )
   }

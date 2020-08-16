@@ -25,7 +25,7 @@ const Curriculum = () => {
               <h4 className=" mt-0">Student Films</h4>
               <hr className="divider my-4" />
             </div>
-            <h2 class="mrb-25 mb-2">Series fo short films filmed by<span class="display-font"> our</span> <span class="display-font">students</span></h2>
+            <h2 class="mrb-25 mb-2">Series of short films filmed by<span class="display-font"> our</span> <span class="display-font">students</span></h2>
 
      
 
