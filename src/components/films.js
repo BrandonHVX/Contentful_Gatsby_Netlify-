@@ -8,7 +8,7 @@ import heroImg from '../images/studentfilms.jpeg'
 import WaveRight from '../images/wave_right.png'
 
 
-const Curriculum = () => {
+export default  () => {
 
 
     return (
@@ -40,4 +40,3 @@ const Curriculum = () => {
 
 
 
-export default Curriculum;

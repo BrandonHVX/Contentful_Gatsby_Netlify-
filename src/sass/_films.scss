@@ -1,12 +1,10 @@
-// Styling for the About
+/*--------------------------------------------------------------
+# Films
+--------------------------------------------------------------*/
 .films {
 
 	position: relative;
-
 	width: 100%;
-
-	// replace the masthead.jpg image in the /img directory to change the image
-	// if the image name change, make sure to update the url path below!
 	background: linear-gradient(to bottom, #{fade-out( rgb(255, 0, 0), .1)} 
 	0%,#{fade-out(rgba(214, 15, 15, 0.9), .2)} 100%), url('../images/hero-bg.jpg');
 	background-position: center;

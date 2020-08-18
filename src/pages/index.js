@@ -8,6 +8,7 @@ import Education from '../components/education'
 import Gallery from '../components/gallery'
 import Films from '../components/films'
 import About from '../components/about'
+import Contact from '../components/contact'
 import Layout from '../components/layout'
 import WaveRight from '../images/wave_right.png'
 import ArticlePreview from '../components/article-preview'
@@ -54,7 +55,7 @@ class RootIndex extends React.Component {
     </section>
          <Gallery />
          
-
+<Contact />
   
 </div>
         

@@ -8,7 +8,7 @@ import Photo from '../images/photo.png'
 import Cinema from '../images/cinema.png'
 import Editing from '../images/editing.png'
 
-const Curriculum = () => {
+export default  () => {
 
 
     return (
@@ -85,9 +85,7 @@ const Curriculum = () => {
             </div>
           </div>
 
-        
-
- 
+      
 
         </div>
 
@@ -99,4 +97,3 @@ const Curriculum = () => {
 
 
 
-export default Curriculum;
