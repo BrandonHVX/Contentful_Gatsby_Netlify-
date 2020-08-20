@@ -10,6 +10,7 @@ import WaveRight from '../images/wave_right.png'
 import heroImg from '../images/1stTakeHero-v2.png'
 import ReactPlayer from 'react-player/youtube'
 
+
 import Dorsey from '../images/dorsey.jpg'
 import Image from './Img'
 import WhyImage from './whyImg'

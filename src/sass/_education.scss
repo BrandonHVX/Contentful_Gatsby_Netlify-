@@ -23,36 +23,35 @@
  
 }
 
-.icon-box:hover {
-  border-color: #fff;
-  transition: all ease-in-out 0.3s;
-  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
-   .icon {
-    margin: 0 auto;
-    width: 100px;
-    height: 100px;
-    background: $primary;
-    z-index: 0;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 50px;  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: ease-in-out 0.3s;
-    position: relative;
+// .icon-box:hover {
+//   border-color: #fff;
+//   transition: all ease-in-out 0.3s;
+//   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+//    .icon {
+//     margin: 0 auto;
+//     width: 100px;
+//     height: 100px;
+//     background: $primary;
+//     z-index: 0;
+//     border: 1px solid rgb(255, 255, 255);
+//     border-radius: 50px;  
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     transition: ease-in-out 0.3s;
+//     position: relative;
   
-  }
+//   }
  
- .icon-image svg path {
-    transition: 0.5s;
-    fill: white;
-    z-index: 1;
+//  .icon-image svg path {
+//     transition: 0.5s;
+//     fill: white;
+//     z-index: 1;
 
-  }
+//   }
 
   
-
-}
+// }
 
  .icon-box .icon {
   margin: 0 auto;
@@ -102,106 +101,6 @@
 
 
 
- .icon-box p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-
-
-
-
-
-
-
 
 
  }
-/*--------------------------------------------------
------- 8. SERVICES_BLOCK
---------------------------------------------------*/
-
-
-.numb {
-  text-align: center;
-}
-
-.numb span {
-  margin: 0 auto;
-  margin-bottom: 30px;
-  display: block;
-  position: relative;
-  display: inline-block;
-  width: 90px;
-  height: 90px;
-  background: -webkit-gradient(linear, left top, right top, from(#ee3fce), to(#7231CF));
-  background: linear-gradient(90deg, #ee3fce 0%, #7231CF 100%);
-  border-radius: 50%;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  align-items: center;
-}
-
-.numb span i {
-  color: #fff;
-  font-size: 24px;
-}
-
-.numb span:before {
-  border-radius: 50%;
-  content: '';
-  position: absolute;
-  background: #fde8f9;
-  z-index: -1;
-  width: calc(100% + 20px);
-  height: calc(100% + 20px);
-  left: -10px;
-  top: -10px;
-  -webkit-animation: shadow  2s infinite ease-in-out;
-  animation: shadow  2s infinite ease-in-out;
-}
-
-@-webkit-keyframes shadow {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
-@keyframes shadow {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
-.numb p {
-  padding-top: 20px;
-}
-
-.col-lg-4:last-child .numb::after {
-  content: none;
-  display: none;
-}
-
-  

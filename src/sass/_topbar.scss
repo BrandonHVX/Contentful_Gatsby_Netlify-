@@ -1,5 +1,5 @@
 // Base styling for the navbar
-#mainNav {
+#topNav {
 	box-shadow: $box-shadow;
 
 	transition: background-color 0.2s ease;
@@ -75,7 +75,7 @@
 		}
 	}
 }
-.site-container.navbar-scrolled #mainNav {
+.site-container.navbar-scrolled #topNav {
 	box-shadow: $box-shadow;
 	background-color: $white;
 	.navbar-brand {
@@ -112,7 +112,7 @@
 
 @include media-breakpoint-up(lg) {
 	// Navbar styling applied when the page is scrolled
-	.site-container.navbar-scrolled #mainNav {
+	.site-container.navbar-scrolled #topNav {
 		box-shadow: $box-shadow;
 		background-color: $white;
 		.navbar-brand {
@@ -147,7 +147,7 @@
 		}
 	}
 	// Navbar styling applied when the page is scrolled
-	.site-container.navbar-scrolled #mainNav {
+	.site-container.navbar-scrolled #topNav {
 		box-shadow: $box-shadow;
 		background-color: $white;
 		.navbar-brand {
@@ -168,6 +168,7 @@
 				background-attachment: scroll;
 				background-size: cover;
 			}
+			}
 		}
 	
 		.navbar-nav {
@@ -180,8 +181,10 @@
 				}
 			}
 		}
+
+		
 	}
-}
+
 
 
 

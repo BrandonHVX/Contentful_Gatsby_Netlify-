@@ -10,6 +10,7 @@ import Films from '../components/films'
 import About from '../components/about'
 import Contact from '../components/contact'
 import Layout from '../components/layout'
+
 import WaveRight from '../images/wave_right.png'
 import ArticlePreview from '../components/article-preview'
 
@@ -23,12 +24,12 @@ class RootIndex extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <div >
+        <div>
           <Helmet title={siteTitle} />
         <Hero/>
         <About />
  <Education />
- <Films />
+
  <section class="page-section section-bg blog" id="blog" >
  <div className="container">
       <div class=" section-heading mt-5 " data-wow-delay="0ms" data-wow-duration="1000ms" >

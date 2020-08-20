@@ -1,45 +1,29 @@
-import React, {useState} from 'react'
-import { GoogleMap, LoadScript } from '@react-google-maps/api';
- 
-const containerStyle = {
-  width: '400px',
-  height: '400px'
-};
- 
-const center = {
-  lat: -3.745,
-  lng: -38.523
-};
- 
-function MyComponent() {
-  const [map, setMap] = useState(null)
- 
-  const onLoad = React.useCallback(function callback(map) {
-    const bounds = new window.google.maps.LatLngBounds();
-    map.fitBounds(bounds);
-    setMap(map)
-  }, [])
- 
-  const onUnmount = React.useCallback(function callback(map) {
-    setMap(null)
-  }, [])
- 
+import React, { useCallback, useState } from 'react'
+import PropTypes from 'prop-types'
+import { GoogleMap, OverlayView, Marker, LoadScript } from '@react-google-maps/api'
+
+export default () => {
+
+
+
+
   return (
-    <LoadScript
-      googleMapsApiKey="AIzaSyC1usrmp1dSP7Q-fxffkfOnlamcgZcoWrk"
-    >
-      <GoogleMap
-        mapContainerStyle={containerStyle}
-        center={center}
-        zoom={10}
-        onLoad={onLoad}
-        onUnmount={onUnmount}
-      >
-        { /* Child components, such as markers, info windows, etc. */ }
-        <></>
-      </GoogleMap>
-    </LoadScript>
+    <div className='map'>
+ <iframe
+  width="100%"
+  height="350"
+  frameborder="0" 
+  src="https://www.google.com/maps/embed/v1/streetview?key=AIzaSyC1usrmp1dSP7Q-fxffkfOnlamcgZcoWrk
+  &location=25.7915754,-80.1968459
+  &heading=200
+  &pitch=10
+  &fov=38" allowfullscreen>
+</iframe>
+    </div>
   )
 }
- 
-export default React.memo(MyComponent)
+
+
+
+
+

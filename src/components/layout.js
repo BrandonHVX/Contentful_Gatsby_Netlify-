@@ -6,9 +6,11 @@
  */
 
 import React from "react"
+import {Link} from "gatsby"
 import PropTypes from "prop-types"
 import NavBar from "./Navbar"
 import "./layout.scss"
+
 
 const getScrollNode = (element) => {
   return element.ownerDocument.scrollingElement || element.ownerDocument.documentElement
@@ -58,7 +60,9 @@ export default class Layout extends React.Component {
         className={className}
         ref={this.siteContainer}
         >
-   <NavBar />
+  
+   <NavBar />   
+                  
         <main>{this.props.children}</main>
         <footer className="bg-light py-5">
           <div className="container">

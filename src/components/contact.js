@@ -30,7 +30,7 @@ export default  () => {
       <div class="info-box mb-4">
         <i class="bx bx-map"></i>
         <h3>Our Address</h3>
-        <p>A108 Adam Street, New York, NY 535022</p>
+        <p>100 NW 17th Street,  Miami, FLorida 33127</p>
       </div>
     </div>
 
@@ -38,7 +38,7 @@ export default  () => {
       <div class="info-box  mb-4">
         <i class="bx bx-envelope"></i>
         <h3>Email Us</h3>
-        <p>contact@example.com</p>
+        <p>1stakeyouthfilm@gmail.com</p>
       </div>
     </div>
 
@@ -46,7 +46,7 @@ export default  () => {
       <div class="info-box  mb-4">
         <i class="bx bx-phone-call"></i>
         <h3>Call Us</h3>
-        <p>+1 5589 55488 55</p>
+        <p>+1-305-555-5555</p>
       </div>
     </div>
 

@@ -15,7 +15,7 @@ export default  () => {
 <section class="page-section section-bg education" id="education" >
       <div class="container" data-aos="fade-up">
 
-               <div class=" order-1 order-lg-2  section-heading mt-5 " data-wow-delay="0ms" data-wow-duration="1000ms" >
+               <div class=" section-heading mt-5 " data-wow-delay="0ms" data-wow-duration="1000ms" >
 					<h4 class="mrb-15 text-gray ">Education</h4>
           <hr className="divider mb-4" />
 					<h2 class="mrb-25">	Our innovative program is set up to build  <span class="display-font"> skill sets that expand </span>beyond the classroom and into the workforce. </h2>
@@ -24,7 +24,7 @@ export default  () => {
 			
 				</div>
 
-        <div class="row ">
+        <div class="row">
           <div class="col-lg-6 col-md-6 d-flex align-items-stretch " data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox">
               <div class="icon">
