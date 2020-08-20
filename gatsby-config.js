@@ -53,19 +53,7 @@ module.exports = {
     },
     
   },
-  {
-    resolve: `@ccalamos/gatsby-source-googlemaps-static`,
-    options: {
-        key: `YOUR_GOOGLE_MAPS_STATIC_API_KEY`,
-        center: `LATITUDE,LONGITUDE || CITY,REGION`,
-        zoom: `ZOOM_LEVEL`,
-        size: `SIZE || WIDTHxHEIGHT`,
-        scale: `SCALE_VALUE`,
-        format: `IMAGE_EXTENSION`,
-        mapType: `MAP_FORMAT`,
-        
-    }
-  },
+
   
     'gatsby-transformer-remark',
     'gatsby-transformer-sharp',
