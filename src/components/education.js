@@ -12,7 +12,7 @@ export default  () => {
 
 
     return (
-<section class="page-section section-bg education" id="education" >
+<section class="page-section section-bg " id="education" >
       <div class="container" data-aos="fade-up">
 
                <div class=" section-heading mt-5 " data-wow-delay="0ms" data-wow-duration="1000ms" >
