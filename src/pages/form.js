@@ -46,7 +46,7 @@ const handleSubmit = e => {
 
 return (
   <Layout >
-  <div style={{ background: '#fff' }}>
+  <div style={{ background: '#fff' , marginTop: '200px'}}>
 
   
     <div className="wrapper">

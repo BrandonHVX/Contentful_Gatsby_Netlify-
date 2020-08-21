@@ -74,25 +74,8 @@ hr.light {
 	}
 }
 
-.btn-outline-sign {
-	text-transform: uppercase;
-	border: 2px solid $primary;
-	border-radius: 10rem;
 
-	text-align: center;
-	width: 100%;
-    padding: 20px;
-	color: rgb(255, 255, 255);
-	transition: ease-in-out 0.3s;
-	background-color: $primary;
-	&:hover {
-		background-color: $secondary;
-		border: 2px solid $secondary;
-		color: white;
-		transition: ease-in-out 0.3s;
-	}
 
-}
 
 
 // Page section padding

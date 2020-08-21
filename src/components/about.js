@@ -7,9 +7,9 @@ import Training from '../images/training.jpg'
 import Overtown from '../images/overtown.jpg'
 import Entrepreneurship from '../images/minority.jpg'
 import WaveRight from '../images/wave_right.png'
-import heroImg from '../images/1stTakeHero-v2.png'
-import ReactPlayer from 'react-player/youtube'
 
+import ReactPlayer from 'react-player/youtube'
+import heroImg from '../images/1stTakeHero-v2.png'
 
 import Dorsey from '../images/dorsey.jpg'
 import Image from './Img'
@@ -93,31 +93,31 @@ export default () => (
 				<div class="col-md-12 col-xl-6 wow fadeInRight animated" data-wow-delay="0ms" data-wow-duration="1000ms">
 					<h2 class="mrb-25">Why 1st Take?</h2>
 					<p class="mrb-40 mb-5 mrb-sm-60">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia rerum possimus error quia consequuntur iure ipsum quod ipsam Voluptatum aliquam, nostrum recusandae perferendis?</p>
-					<div class="icon-box-two mrb-40">
+					<div class="icon-box mrb-40">
 						<div class="icon bg-gradient-color f-left">
-							<span class="webexflaticon flaticon-target-1"></span>
+							<img class="img-fluid" src={Students}/>
 						</div>
 						<div class="icon-details ">
 							<h4 class="icon-box-title mrb-10">Education and College Readiness</h4>
 							<p>1st Take Youth Film Program will be dedicated to teaching the youth career and life skills through hands-on coaching that centers around the complete process of filmmaking.</p>
 						</div>
 					</div>
-					<div class="icon-box-two mrb-40">
+					<div class="icon-box mrb-40">
 						<div class="icon bg-gradient-color f-left">
 							<span class="webexflaticon flaticon-plan"></span>
 						</div>
 						<div class="icon-details ">
-							<h4 class="icon-box-title mrb-10">Economic Rejuvenation</h4>
-							<p>Repurposing an inactive space and making it a Diverse Event Space for the community to use and enjoy, while instigating economic development.Space will be available for the community to enjoy as needed.</p>
+							<h4 class="icon-box-title mrb-10">Entrepreneurship and Leadership Skills</h4>
+							<p>Students will use entrepreneurship, leadership and team skills to develop content. They will learn to write, produce, schedule, budget, create, edit/finalize, market and sell their projects. </p>
 						</div>
 					</div>
-					<div class="icon-box-two">
+					<div class="icon-box">
 						<div class="icon bg-gradient-color f-left">
 							<span class="webexflaticon flaticon-guarantee"></span>
 						</div>
 						<div class="icon-details ">
-							<h4 class="icon-box-title mrb-10">Entrepreneurship and Leadership Skills</h4>
-							<p>Students will use entrepreneurship, leadership and team skills to develop content. They will learn to write, produce, schedule, budget, create, edit/finalize, market and sell their projects. </p>
+							<h4 class="icon-box-title mrb-10">Exposure</h4>
+							<p>Students content that is socially aware and preserving the history of their community while getting major exposure globally on urban streaming network</p>
 						</div>
 					</div>
 				</div>

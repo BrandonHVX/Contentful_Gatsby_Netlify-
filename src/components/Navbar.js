@@ -1,64 +1,130 @@
-import React from "react"
+import React, {Component} from "react"
 import Scrollspy from "react-scrollspy"
 import { Navbar, Nav } from "react-bootstrap"
-import Link from 'gatsby'
+import { Link } from "gatsby"
 import Scroller from './scroller'
 import logoblack from '../images/first-take-logo-black.png'
 import logowhite from '../images/first-take-logo-white.png'
-export default class Header extends React.Component {
+import Scroll from './scroll';
+
+
+export default class Header extends Component {
   constructor(props) {
     super(props);
-    Scroller.handleAnchorScroll = Scroller.handleAnchorScroll.bind(this);
+    this.state = {
+      openMenu: false,
+      visibilityClass: '',
+    };
+  }
+  toggleMenu = value => {
+    this.setState({ openMenu: value });
+  };
+
+  handleScroll = () => {
+    const { visibilityClass } = this.state;
+    if (window.pageYOffset > 300) {
+      if (visibilityClass !== 'navbar-shrink') {
+        this.setState({ visibilityClass: 'navbar-shrink' });
+      }
+    } else {
+      if (visibilityClass === 'navbar-shrink') {
+        this.setState({ visibilityClass: '' });
+      }
+    }
+  };
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
   }
 
   render() {
+    const { openMenu, visibilityClass } = this.state;
     return (
-      <>
-        <Navbar className="navbar navbar-expand-lg navbar-light fixed-top " id="mainNav" expand="lg"
-                collapseOnSelect={true}>
-          <div className="container">
-            <a className="navbar-brand js-scroll-trigger " href="#page-top" onClick={Scroller.handleAnchorScroll}>
+      <nav
+        className={`navbar navbar-expand-lg navbar-light fixed-top ${visibilityClass}`}
+        id="mainNav"
+      >
+    
+        <div className="container">
+                 <a className="navbar-brand js-scroll-trigger " href="#page-top" >
             <div  className="logo-img-white logo-img-black navbar-scrolled img-fluid"/>
           
             
             </a>
-            <Navbar.Toggle aria-controls="navbarResponsive"/>
-            <Navbar.Collapse id="navbarResponsive">
-              <Nav className="navbar-nav ml-auto my-2 my-lg-0">
-                <Scrollspy className="navbar-nav"
-                           items={["about", "education","films", "blog", "signup",  ]}
-                           currentClassName="active" rootEl={"#mainNav"} offset={-75}>
-                  <li className="nav-item">
-                    <Nav.Link className={"js-scroll-trigger"} href="#about" onClick={Scroller.handleAnchorScroll}>About</Nav.Link>
-                  </li>
-                  <li className="nav-item">
-                    <Nav.Link className={"js-scroll-trigger"} href="#education" onClick={Scroller.handleAnchorScroll}>Education</Nav.Link>
-                  </li>
-                  <li className="nav-item">
-                    <Nav.Link className={"js-scroll-trigger"} href="#films" onClick={Scroller.handleAnchorScroll}>Films</Nav.Link>
-                  </li>
+          <button
+            onClick={_ => this.toggleMenu(!openMenu)}
+            className={`navbar-toggler navbar-toggler-right ${
+              openMenu ? '' : 'collapsed'
+            }`}
+            type="button"
+            aria-controls="navbarResponsive"
+            aria-expanded={openMenu}
+            aria-label="Toggle navigation"
+          >
+            Menu
+            <i className="fas fa-bars"></i>
+          </button>
+
+          <div
+            className={`collapse navbar-collapse ${openMenu ? 'show' : ''}`}
+            id="navbarResponsive"
+          >
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-item">
+                <Scroll
+                  onClick={_ => this.toggleMenu(!openMenu)}
+                  type="id"
+                  element="about"
+                >
+                  <a className="nav-link" href="#about">
+                   About
+                  </a>
+                </Scroll>
+              </li>
+              <li className="nav-item">
+                <Scroll
+                  onClick={_ => this.toggleMenu(!openMenu)}
+                  type="id"
+                  element="education"
+                >
+                  <a className="nav-link" href="#education">
+                    Education 
+                  </a>
+                </Scroll>
+              </li>
+              <li className="nav-item">
+                <Scroll
+                  onClick={_ => this.toggleMenu(!openMenu)}
+                  type="id"
+                  element="contact"
+                >
+                  <a className="nav-link" href="#contact">
+                Contact
+                  </a>
+                </Scroll>
+              </li>
+              <li className="nav-item">
+
+<Link to="/form/" className="btn btn-outline-donate " >
+Donate
+    </Link>
+ 
+
+</li>
+              <li className="nav-item">
+
+              <Link to="/signup" className="btn btn-outline-sign " >
+               Sign Up
+                  </Link>
                
-                
-                  <li className="nav-item">
-                    <Nav.Link className={"js-scroll-trigger"} href="#blog" onClick={Scroller.handleAnchorScroll}>Blog</Nav.Link>
-                  </li>
-                  <li className="nav-item">
-                    <Nav.Link className={"js-scroll-trigger"} href="#gallery" onClick={Scroller.handleAnchorScroll}>Gallery</Nav.Link>
-                  </li>
-                  <li className="nav-item">
-                    <Nav.Link className={"js-scroll-trigger"} href="#contact" onClick={Scroller.handleAnchorScroll}>Contact</Nav.Link>
-                  </li>
-                  <li className="nav-item ">
-                    <Nav.Link to="/"  className="btn-outline-sign" >Registration</Nav.Link>
-                  </li>
-                </Scrollspy>
-              </Nav>
-            </Navbar.Collapse>
+             
+              </li>
+            </ul>
           </div>
-        </Navbar>
-  
-      </>
+        </div>
+      </nav>
     );
   }
 }
-

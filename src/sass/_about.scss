@@ -25,33 +25,36 @@
 
 
 .why-section {
-  .icon-box-two .icon {
-    background: #E41F7A;
-    border-radius: 50px;
-    width: 84px;
-    height: 84px;
+  .icon-box .icon {
+   background-image: url('../images/image-frame.png');
+   background-size: cover;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
     line-height: 84px;
     float: left;
+    z-index: 1000;
     text-align: center;
 }
 .f-left {
     float: left;
 }
 .bg-gradient-color {
-    background: linear-gradient(45deg, #c60303, $primary) !important;
+   background-image: url('../images/students.jpg');
+  
 }
-.icon-box-two .icon-details {
+.icon-box .icon-details {
   margin-left: 110px;
 }
-.icon-box-two:before {
+.icon-box:before {
   content: "";
   position: absolute;
   z-index: -1;
 
-  margin-left: 42px;
-margin-top: 42px;
-  width: 82px;
-  height: 82px;
+  margin-left: 45px;
+margin-top: 45px;
+width: 100px;
+height: 100px;
   background: #ba1f24;
   border-radius: 50%;
   animation: pulse-border 1500ms ease-out infinite;

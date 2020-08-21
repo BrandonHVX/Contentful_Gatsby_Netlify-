@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import get from 'lodash/get'
 import { Helmet } from 'react-helmet'
 import Img from 'gatsby-image'
@@ -36,7 +36,7 @@ class RootIndex extends React.Component {
 					<h4 class="mrb-15 text-gray "> Recent News</h4>
           <hr className="divider mb-4" />
 				
-
+         
 					<p>Recent news on projects, special guests and upcoming events.</p>
           </div>
 				</div>
